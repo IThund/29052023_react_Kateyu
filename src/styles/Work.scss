@@ -1,0 +1,29 @@
+@import '../styles/App.scss';
+
+.Work-list{
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 4rem;
+}
+
+
+.worklist-item {
+    text-align: left;
+    width: 100%;
+    .worklist-title {
+        padding: 10px 0 30px;
+        border-bottom: 1px solid $gray;
+        h4 {
+            font-weight: 400;
+            margin-bottom: .75rem;
+            color: $gray;
+        }
+        span {
+            letter-spacing: 4px;
+            color: $gray;
+        }
+    }
+}

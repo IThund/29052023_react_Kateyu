@@ -1,0 +1,54 @@
+@import '../styles/App.scss';
+  .projectList {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    margin-bottom: 5rem;
+  }
+  
+//   /* MENU ITEM STYLING */
+  
+  .projectItem {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    cursor: pointer;
+  }
+
+  
+  .projectItem .bgImage {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.projects{
+  padding: 4rem 0;
+  
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+  .projectItem {
+    margin-bottom: 2rem;
+    .bgImage {
+      width: 100%;
+      height: 200px;
+    }
+  }
+  
+}
+
+

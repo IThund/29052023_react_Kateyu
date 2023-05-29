@@ -1,0 +1,120 @@
+@import '../styles/App.scss';
+.footer {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 4rem;
+  background-color: #f7f8fb;
+  padding-top: 6rem;
+
+  .cta {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      
+      span {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          font-size: 2.2rem;
+          font-weight: 400;
+          margin: 0;
+      }
+      h2 {
+          padding-bottom: 3rem;
+          align-items: flex-start;
+          display: inline-flex;
+      }
+  }
+  .footer h2 .line {
+      display: block;
+      height: 4.5rem;
+      overflow: hidden;
+  }
+  .line-inner {
+      display: inline-block;
+  }
+  .line:first-child {
+      margin-right: .4rem;
+  }
+  .content a{
+      // cursor: pointer;
+      text-decoration: none;
+      transition: .2s ease-out;
+  }
+  .content:hover a{
+      color: $peach;
+      transform: rotate(-25deg);
+      font-size: 22px;
+  }
+  a.button {
+      font-size: 20px;
+      align-items: center;
+      background-color: $peach;
+      border-radius: 10rem;
+      color: $black;
+      display: inline-flex;
+      height: 10rem;
+      width: 10rem;
+      justify-content: center;
+      padding: 1rem;
+      text-align: center;
+      &:hover {
+          background-color: $black;
+          color: $pink;
+      }
+  }
+  .bottom {
+      border-top: 1px solid lightgray;
+      color: #555;
+      font-size: 1.6rem;
+      margin-top: 4rem;
+      width: 100%;
+  }
+  .bottom p {
+      font-size: 14px;
+      text-align: center;
+      padding-top: 2rem;
+  }
+}
+
+
+@media (max-width: $layout-breakpoint-xsmall){
+  .footer {
+      padding-top: 8rem;
+      padding-bottom: 4rem;
+      margin-top: 9rem;
+  }
+  .footer .bottom {
+      flex-direction: column;
+  }
+  .footer .cta {
+      flex-direction: column;
+      padding-bottom: 2rem;
+  }
+  
+}
+
+@media (min-width: $layout-breakpoint-small){
+  .footer .bottom {
+      flex-direction: column;
+  }
+  .footer .content a{
+      margin-top: 4rem;
+  }
+  .footer .cta {
+      flex-direction: row;
+  }
+  .footer .cta span{
+      font-size: 4.2rem;
+  }
+  .footer .cta h2{
+      flex-direction: column;
+  }
+  .footer .cta h2 .line:nth-child(2) {
+      left: 7rem;
+      position: relative;
+      top: -0.5rem;
+      z-index: -1;
+  }
+}
